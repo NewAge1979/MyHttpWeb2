@@ -2,11 +2,9 @@ package org.example.Repository;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.Controller.PostController;
 import org.example.Exception.NotFoundException;
 import org.example.Model.Post;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
@@ -33,6 +31,7 @@ public class PostRepository {
                 post.setId(id);
             }
             allPosts.put(id, post);
+            myLogger.info(String.format("Add/Edit post: %d", id));
         } else {
             throw new NotFoundException();
         }
@@ -42,6 +41,7 @@ public class PostRepository {
     public void removeById(long id) {
         if (allPosts.get(id) != null) {
             allPosts.remove(id);
+            myLogger.info(String.format("Delete post: %d", id));
         } else {
             throw new NotFoundException();
         }

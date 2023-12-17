@@ -22,7 +22,7 @@ public class PostController {
         this.service = service;
     }
 
-    public void all(HttpServletResponse response) throws IOException {
+    public void all(HttpServletResponse response) {
         final var data = service.all();
         sendResponse(data, null, response);
     }

@@ -13,7 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 
 public class MainServlet extends HttpServlet {
     private final Logger myLogger = LogManager.getLogger(MainServlet.class);
-    private enum Methods {GET, POST, DELETE};
+    private enum Methods {GET, POST, DELETE}
+
     private final String POST = "/api/posts";
     private final String POST_ID = "/api/posts/\\d+";
     private PostController controller;
@@ -71,7 +72,7 @@ public class MainServlet extends HttpServlet {
                 default -> resp.setStatus(HttpServletResponse.SC_NOT_FOUND);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            myLogger.error(e.getMessage());
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
         }
     }
