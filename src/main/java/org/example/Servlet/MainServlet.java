@@ -4,8 +4,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.example.Controller.PostController;
 import org.example.Exception.NotFoundException;
-import org.example.Repository.PostRepository;
-import org.example.Service.PostService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import javax.servlet.http.HttpServlet;
@@ -22,9 +20,6 @@ public class MainServlet extends HttpServlet {
 
     @Override
     public void init() {
-        /*final var repository = new PostRepository();
-        final var service = new PostService(repository);
-        controller = new PostController(service);*/
         final var springContext = new AnnotationConfigApplicationContext("org.example");
         controller = springContext.getBean(PostController.class);
     }
