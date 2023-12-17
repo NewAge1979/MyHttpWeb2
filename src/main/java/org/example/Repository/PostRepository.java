@@ -4,12 +4,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.example.Exception.NotFoundException;
 import org.example.Model.Post;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
+@Repository
 public class PostRepository {
     private static final Logger myLogger = LogManager.getLogger(PostRepository.class);
     private final ConcurrentHashMap<Long, Post> allPosts = new ConcurrentHashMap<>();

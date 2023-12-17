@@ -3,9 +3,11 @@ package org.example.Service;
 import org.example.Exception.NotFoundException;
 import org.example.Model.Post;
 import org.example.Repository.PostRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class PostService {
     private final PostRepository repository;
 
