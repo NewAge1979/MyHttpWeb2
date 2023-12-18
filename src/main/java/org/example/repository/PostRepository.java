@@ -1,9 +1,9 @@
-package org.example.Repository;
+package org.example.repository;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.Exception.NotFoundException;
-import org.example.Model.Post;
+import org.example.exception.NotFoundException;
+import org.example.model.Post;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

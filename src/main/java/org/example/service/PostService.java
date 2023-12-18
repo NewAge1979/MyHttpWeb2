@@ -1,8 +1,8 @@
-package org.example.Service;
+package org.example.service;
 
-import org.example.Exception.NotFoundException;
-import org.example.Model.Post;
-import org.example.Repository.PostRepository;
+import org.example.exception.NotFoundException;
+import org.example.model.Post;
+import org.example.repository.PostRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

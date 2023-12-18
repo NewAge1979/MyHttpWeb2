@@ -1,11 +1,11 @@
-package org.example.Controller;
+package org.example.controller;
 
 import com.google.gson.Gson;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.Exception.NotFoundException;
-import org.example.Model.Post;
-import org.example.Service.PostService;
+import org.example.exception.NotFoundException;
+import org.example.model.Post;
+import org.example.service.PostService;
 import org.springframework.stereotype.Controller;
 
 import javax.servlet.http.HttpServletResponse;

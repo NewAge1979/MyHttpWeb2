@@ -1,9 +1,9 @@
-package org.example.Servlet;
+package org.example.servlet;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.Controller.PostController;
-import org.example.Exception.NotFoundException;
+import org.example.controller.PostController;
+import org.example.exception.NotFoundException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import javax.servlet.http.HttpServlet;
