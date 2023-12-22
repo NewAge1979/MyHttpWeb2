@@ -11,7 +11,6 @@ import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
-@Repository
 public class PostRepository {
     private static final Logger myLogger = LogManager.getLogger(PostRepository.class);
     private final ConcurrentHashMap<Long, Post> allPosts = new ConcurrentHashMap<>();
