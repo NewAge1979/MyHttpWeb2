@@ -1,0 +1,7 @@
+/home/khrapatiy/MyProjects/JD-48/Spring/MyHttpWeb2/src/main/java/org/example/service/PostService.java
+/home/khrapatiy/MyProjects/JD-48/Spring/MyHttpWeb2/src/main/java/org/example/model/Post.java
+/home/khrapatiy/MyProjects/JD-48/Spring/MyHttpWeb2/src/main/java/org/example/config/PostConfig.java
+/home/khrapatiy/MyProjects/JD-48/Spring/MyHttpWeb2/src/main/java/org/example/exception/NotFoundException.java
+/home/khrapatiy/MyProjects/JD-48/Spring/MyHttpWeb2/src/main/java/org/example/servlet/MainServlet.java
+/home/khrapatiy/MyProjects/JD-48/Spring/MyHttpWeb2/src/main/java/org/example/controller/PostController.java
+/home/khrapatiy/MyProjects/JD-48/Spring/MyHttpWeb2/src/main/java/org/example/repository/PostRepository.java
