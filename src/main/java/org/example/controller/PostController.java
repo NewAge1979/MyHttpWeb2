@@ -13,7 +13,6 @@ import java.io.IOException;
 import java.io.Reader;
 import java.util.List;
 
-@Controller
 public class PostController {
     private static final Logger myLogger = LogManager.getLogger(PostController.class);
     private static final String APPLICATION_JSON = "application/json";
